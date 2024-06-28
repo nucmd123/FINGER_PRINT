@@ -52,7 +52,7 @@ if image is not None:
     print("best score: " + str(best_score))
 
     result = cv2.drawMatches(sample, kp1, image, kp2, mp, None)
-    result = cv2.resize(result, None, fx=4, fy=4)
+    result = cv2.resize(result, None, fx=2.5, fy=2.5)
 
     cv2.imshow("result", result)
     cv2.waitKey(0)
